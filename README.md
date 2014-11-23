@@ -23,6 +23,9 @@ the global `benchmark` method accepts two arguments:
 - `callback`  
   the function to run when the benchmark has completed
 
+**please note:** using small sample size (like 5x3) may not reflect the
+FPS 100% accurately. Adjust your code to accept maybe >55FPS as a threshold.
+
 ## example
 ```
 benchmark({samples : 5, runs : 3}, function(result){
