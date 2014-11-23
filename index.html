@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+
+    <script src="fastBenchmark.js"></script>
+    <script>
+
+    function lol(asdf){
+        console.log(asdf);
+    }
+
+    //benchmark({samples : 1},lol);
+    //benchmark([{samples : 5},{samples : 1}],lol);
+    //benchmark([{samples : 15}],lol);
+    benchmark([{samples : 5,runs : 3}],lol);
+
+    </script>
+    
+</body>
+</html>
